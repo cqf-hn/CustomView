@@ -1,4 +1,4 @@
-package customview.customview;
+package customview.customview.fragment;
 
 import android.support.v4.app.Fragment;
 
@@ -8,11 +8,11 @@ import android.support.v4.app.Fragment;
 
 public class FragmentDetail {
     private Fragment fragment;
-    private String title;
+    private int resId;
 
-    public FragmentDetail(Fragment fragment, String title) {
+    public FragmentDetail(Fragment fragment, int resId) {
         this.fragment = fragment;
-        this.title = title;
+        this.resId = resId;
     }
 
     public Fragment getFragment() {
@@ -23,11 +23,11 @@ public class FragmentDetail {
         this.fragment = fragment;
     }
 
-    public String getTitle() {
-        return title;
+    public int getResId() {
+        return resId;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setResId(int resId) {
+        this.resId = resId;
     }
 }

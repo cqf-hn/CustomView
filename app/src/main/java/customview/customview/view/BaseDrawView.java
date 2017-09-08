@@ -1,4 +1,4 @@
-package customview.customview;
+package customview.customview.view;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -10,6 +10,8 @@ import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.view.View;
+
+import customview.customview.util.TDevice;
 
 /**
  * @desc ${TODD}

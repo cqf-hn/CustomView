@@ -1,4 +1,4 @@
-package customview.customview;
+package customview.customview.activity;
 
 import android.content.Intent;
 import android.support.v7.widget.LinearLayoutManager;
@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import butterknife.Bind;
+import customview.customview.R;
 
 public class MainActivity extends BaseActivity {
 

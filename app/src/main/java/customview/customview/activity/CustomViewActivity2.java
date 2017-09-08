@@ -1,4 +1,4 @@
-package customview.customview;
+package customview.customview.activity;
 
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -6,18 +6,21 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 
 import butterknife.Bind;
+import customview.customview.fragment.FragmentDetail;
+import customview.customview.R;
+import customview.customview.fragment.ShaderFragment;
 
 /**
  * @desc ${TODD}
  */
 
-public class CustomViewActivity1 extends BaseActivity {
+public class CustomViewActivity2 extends BaseActivity {
     @Bind(R.id.tabLayout)
     TabLayout tabLayout;
     @Bind(R.id.viewPager)
     ViewPager viewPager;
     private static final FragmentDetail[] DETAILS = new FragmentDetail[]{
-            new FragmentDetail(new DrawColorFragment(),"BaseDraw")
+            new FragmentDetail(new ShaderFragment(),R.string.shader)
     };
 
     @Override
@@ -41,7 +44,7 @@ public class CustomViewActivity1 extends BaseActivity {
 
             @Override
             public CharSequence getPageTitle(int position) {
-                return DETAILS[position].getTitle();
+                return getString(DETAILS[position].getResId());
             }
         });
         tabLayout.setupWithViewPager(viewPager);

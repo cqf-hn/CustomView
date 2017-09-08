@@ -1,4 +1,4 @@
-package customview.customview;
+package customview.customview.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

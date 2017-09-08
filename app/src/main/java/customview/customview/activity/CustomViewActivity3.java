@@ -1,4 +1,7 @@
-package customview.customview;
+package customview.customview.activity;
+
+import customview.customview.R;
+import customview.customview.activity.BaseActivity;
 
 /**
  * @desc ${TODD}

@@ -1,4 +1,4 @@
-package customview.customview;
+package customview.customview.util;
 
 import android.app.Activity;
 import android.content.Context;
